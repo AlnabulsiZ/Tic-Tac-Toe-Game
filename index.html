@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <!--  BEGIN GAME  -->
+      <div id="overlay">
+        <div id="message">
+            <div class="content"></div>
+            <div id="decision">
+                <div class="newGame">New Game</div>
+                <div class="newRound">New Round</div>
+
+            </div>
+            
+        </div>
+      </div>
+      <div class="container">
+        <div class="tools">
+            <div class="symbols">
+                <i id="x" class="material-icons">close</i>
+                <i id="reset" class="material-icons">radio_button_unchecked</i>
+            </div>
+            <div class="turn">
+               <span class="current-turn">Turn <i id="x" class="material-icons">close</i></span>
+            </div>
+            <div class="reset">
+                <div class="button">
+                    <i class="material-icons rotate-icon">refresh</i>
+                </div>
+            </div>
+        </div><div class="board">
+        <div class="cells">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="cells">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="cells">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+
+        <div class="stats">
+            <div class="player">
+                <label>player1</label>
+                <span class="score1">0</span>
+            </div>
+            <div class="draws">
+                <label>Draws</label>
+                <span class="draw">0</span>
+            </div>
+            <div class="player">
+                <label>player2</label>
+                <span class="score2">0</span>
+            </div>
+        </div>
+      </div>
+      
+      </div>
+    <!--  END GAME  -->
+    <script src="script.js"></script>
+</body>
+</html>
